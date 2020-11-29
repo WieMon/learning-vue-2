@@ -1,22 +1,22 @@
 <template>
 <div>
- <ComponentOne
-  :gameName='name'
-  :gamePlace='place'
-  :gameNumberPlayer='numberPlayers'
-  :gameNewPlayersInput='newPlayersInput'
-  :gameNewPlayers='newPlayers'
-  @addPlayer='newPlayersInput=$event'
+  <ComponentOne
+    :gameName='name'
+    :gamePlace='place'
+    :gameNumberPlayer='numberPlayers'
+    :gameNewPlayersInput='newPlayersInput'
+    :gameNewPlayers='newPlayers'
+    @addPlayer='newPlayersInput=$event'
   />
-  <!-- <ComponentTwo>
+  <ComponentTwo>
 
-  </ComponentTwo> -->
+  </ComponentTwo>
 </div>
 </template>
 
 <script>
 import ComponentOne from './Components/ComponentOne.vue';
-// import ComponentTwo from './Components/ComponentTwo.vue';
+import ComponentTwo from './Components/ComponentTwo.vue';
 
 
 export default {
@@ -30,7 +30,8 @@ export default {
     }
   },
   components: {
-    ComponentOne
+    ComponentOne,
+    ComponentTwo
   }
 }
 </script>
