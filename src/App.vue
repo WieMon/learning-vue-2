@@ -8,16 +8,22 @@
     :gameNewPlayers='newPlayers'
     @addPlayer='newPlayersInput=$event'
   />
-  <ComponentTwo>
+  <ComponentTwo />
+  <ComponentThree>
+    <ul slot='weapons-for-game'>
+      <li v-for='(weapon,index) in weapons' :key='index'>
+        {{weapon}}
+      </li>
+    </ul>
+  </ComponentThree>
 
-  </ComponentTwo>
 </div>
 </template>
 
 <script>
 import ComponentOne from './Components/ComponentOne.vue';
 import ComponentTwo from './Components/ComponentTwo.vue';
-
+import ComponentThree from './Components/ComponentThree.vue';
 
 export default {
   data() {
@@ -26,12 +32,14 @@ export default {
       place: 'The North',
       numberPlayers: 8,
       newPlayersInput:'',
-      newPlayers: []
+      newPlayers: [],
+      weapons: ['sword', 'bow', 'knife']
     }
   },
   components: {
     ComponentOne,
-    ComponentTwo
+    ComponentTwo,
+    ComponentThree
   }
 }
 </script>

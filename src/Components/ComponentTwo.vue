@@ -1,5 +1,5 @@
 <template>
-  <div class='component-container-two'>
+  <div class='component-container component-two'>
     <h3>Games: </h3>
     <ul>
       <li v-for='(game,index) in games' :key='index'>
@@ -27,9 +27,7 @@
 </script>
 
 <style>
-  .component-container-two {
-    padding: 0 20px 10px 20px;
-    margin: 20px;
+  .component-two {
     border: 2px solid purple;
     box-shadow: 3px 3px 2px purple;
   }

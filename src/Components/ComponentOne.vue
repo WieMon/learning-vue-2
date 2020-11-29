@@ -1,5 +1,5 @@
 <template>
-<div class='component-container-one'>
+<div class='component-container component-one'>
   <h3>Game details:</h3>
   <ul>
     <li><span>Game: </span>{{gameName}}</li>
@@ -80,9 +80,11 @@
   </script>
 
 <style>
-  .component-container-one {
+  .component-container {
     padding: 0 20px 10px 20px;
     margin: 20px;
+  }
+  .component-one {
     border: 2px solid orange;
     box-shadow: 3px 3px 2px orange;
   }
