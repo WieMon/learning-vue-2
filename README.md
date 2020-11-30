@@ -1,6 +1,17 @@
 # learning-vue-2
 
-> A Vue.js project
+## Description
+My training repositorium for Vue.js.
+
+## Table of contents:
+- form to add game players
+- form to add games - passing props with bus
+- form to add weapons - passing content with slot
+
+##Technologies:
+- vue: 2.5.11
+- webpack: 3.6.0
+- eslint: 6.7.2
 
 ## Build Setup
 
