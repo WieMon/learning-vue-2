@@ -8,7 +8,7 @@ My training repositorium for Vue.js.
 - form to add games - passing props with bus
 - form to add weapons - passing content with slot
 
-##Technologies:
+## Technologies:
 - vue: 2.5.11
 - webpack: 3.6.0
 - eslint: 6.7.2
